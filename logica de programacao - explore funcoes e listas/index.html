@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Jogo do Número Secreto</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="container__conteudo">
+                <div class="container__informacoes">
+                    <div class="container__texto">
+                        <h1>Advinhe o <span class="container__texto__azul">Número Secreto</span></h1>
+                        <p class="texto__paragrafo">Digite um número entre 1 e 10:</p>
+                    </div>
+                    <input type="number" class="container__input" min="1" max="10">
+                    <div class="chute container__botoes">
+                        <button onclick="verificarChute()" class="container__botao">
+                            Chutar número
+                        </button>
+                        <button onclick="reiniciarJogo()" class="container__botao" id="reiniciar" disabled>
+                            Novo jogo
+                        </button>
+                    </div>
+                </div>
+                <img
+                    src="images/ia.png"
+                    alt="Foto de uma mulher feita por IA olhando para esquerda"
+                    class="container__imagem__ia"
+                />
+            </div>
+        </div>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
